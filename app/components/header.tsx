@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { links } from "../lib/data";
+import { headerList, links } from "../lib/data";
 import Link from "next/link";
 import { LiaGripfire } from "react-icons/lia";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 import clsx from "clsx";
 import { useActiveSectionContext } from "../context/active-section-context";
+import { BiLogoGithub } from "react-icons/bi";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -25,9 +26,9 @@ export default function Header() {
             Farhan Nazir
           </div>
           <ul className="hidden sm:flex  shrink-0  items-center justify-center gap-x-4 text-[0.8rem] font-medium text-gray-950   ">
-            {links.map((link) => (
+            {headerList.map((list) => (
               <motion.li
-                key={link.hash}
+                key={list.name}
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 className="relative "
@@ -35,16 +36,20 @@ export default function Header() {
                 <Link
                   className={clsx(
                     "flex items-center justify-center p-2  hover:text-yellow-900   transition",
-                    { "text-yellow-900": activeSection === link.name }
+                    { "text-yellow-900": activeSection === list.name }
                   )}
-                  href={link.hash}
+                  href={list.link}
                   onClick={() => {
-                    setActiveSection(link.name);
+                    setActiveSection(list.name);
                     setTimeOfLastClick(Date.now());
                   }}
                 >
-                  {link.name}
-                  {link.name === activeSection && (
+                  {list.name === "Source" && (
+                    <BiLogoGithub className="w-6 h-6" />
+                  )}
+                  {list.name}
+
+                  {list.name === activeSection && (
                     <motion.span
                       className="bg-yellow-400 rounded-xl absolute inset-0 -z-10    "
                       layoutId="activeSection"

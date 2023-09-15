@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { skillsData } from "../lib/data";
-import { useSectionView } from "../lib/hooks";
 import SectionHeading from "./section-heading";
 
 const fadeInAnimationVariants = {
@@ -13,15 +12,10 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionView("Skills");
   return (
-    <section
-      ref={ref}
-      id="skills"
-      className="mb-28 scroll-mt-28 text-center sm:mb-40 "
-    >
+    <section id="skills" className="mb-28 scroll-mt-28 text-center sm:mb-40 ">
       <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-sm text-gray-800">
+      <ul className="flex flex-wrap justify-center gap-2 text-sm text-gray-800 max-w-2xl">
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
