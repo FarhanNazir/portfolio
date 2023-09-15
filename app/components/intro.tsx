@@ -6,17 +6,10 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import Link from "next/link";
 import { BiSolidRightArrow, BiSolidDownload } from "react-icons/bi";
-import { useSectionView } from "../lib/hooks";
 
 export default function Intro() {
-  const { ref } = useSectionView("Home", 1);
-
   return (
-    <section
-      ref={ref}
-      className=" max-w-xl text-center  scroll-mt-[100rem]"
-      id="home"
-    >
+    <section className=" max-w-xl text-center  scroll-mt-[100rem]" id="home">
       <div className="flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}

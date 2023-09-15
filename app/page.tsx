@@ -1,5 +1,6 @@
 import About from "./components/about";
 import Bio from "./components/bio";
+import Contact from "./components/contact";
 import Intro from "./components/intro";
 import SectionDivider from "./components/section-divider";
 import Skills from "./components/skills";
@@ -13,6 +14,7 @@ export default function Home() {
         <About />
         <Bio />
         <Skills />
+        <Contact />
       </div>
     </main>
   );

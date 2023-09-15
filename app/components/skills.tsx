@@ -13,12 +13,18 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="mb-28 scroll-mt-28 text-center sm:mb-40 ">
+    <motion.section
+      className="mb-20  text-center"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      id="about"
+    >
       <SectionHeading>My skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-sm text-gray-800 max-w-2xl">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
+            className="bg-yellow-400 border border-black/[0.1] rounded-xl px-5 py-3"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -30,6 +36,6 @@ export default function Skills() {
           </motion.li>
         ))}
       </ul>
-    </section>
+    </motion.section>
   );
 }

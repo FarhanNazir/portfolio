@@ -5,3 +5,6 @@
 html {
   --line-color: #ca8a04;
 }
+.borderBlack {
+  @apply border border-black/10;
+}

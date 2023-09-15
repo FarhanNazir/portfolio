@@ -7,7 +7,7 @@ import { useSectionView } from "../lib/hooks";
 export default function About() {
   return (
     <motion.section
-      className="  text-center leading-8  mb-14 max-w-3xl mt-12"
+      className="  text-center leading-8  mb-14 sm:max-w-3xl mt-12 "
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
