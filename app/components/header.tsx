@@ -33,7 +33,7 @@ export default function Header() {
             <LiaGripfire className="w-6 h-6" />
             Farhan Nazir
           </Link>
-          <ul className="hidden sm:flex  shrink-0  items-center justify-center gap-x-4 text-[0.8rem] font-medium text-gray-950   ">
+          <ul className="hidden sm:flex  shrink-0  items-center justify-center gap-x-4 text-[0.8rem] font-medium text-gray-950   dark:text-white">
             {headerList.map((list) => (
               <motion.li
                 key={list.name}
@@ -43,8 +43,10 @@ export default function Header() {
               >
                 <Link
                   className={clsx(
-                    "flex items-center justify-center p-2  hover:text-yellow-900   transition",
-                    { "text-yellow-900": activeSection === list.name }
+                    "flex items-center justify-center p-2  hover:text-yellow-900 transition",
+                    {
+                      "text-yellow-900 ": activeSection === list.name,
+                    }
                   )}
                   href={list.link}
                   onClick={() => {
@@ -59,7 +61,7 @@ export default function Header() {
 
                   {list.name === activeSection && (
                     <motion.span
-                      className="bg-yellow-400 rounded-xl absolute inset-0 -z-10    "
+                      className="bg-yellow-500 rounded-xl absolute inset-0 -z-10    "
                       layoutId="activeSection"
                       transition={{
                         type: "spring",

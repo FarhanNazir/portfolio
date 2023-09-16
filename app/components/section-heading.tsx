@@ -6,7 +6,7 @@ export default function SectionHeading({
   children: React.ReactNode;
 }) {
   return (
-    <h2 className="text-xl text-gray-800 font-semibold capitalize mb-8 underline underline-offset-[6px] decoration-4">
+    <h2 className="text-xl text-gray-800 dark:text-gray-400 font-semibold capitalize mb-8 underline underline-offset-[6px] decoration-4">
       {children}
     </h2>
   );

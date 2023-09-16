@@ -64,7 +64,7 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download={true}
-          className="w-44 group justify-center font-semibold   bg-white  py-2 px-4 flex items-center gap-2 rounded-md utline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer border-black/10 hover:text-gray-950"
+          className="w-44 group justify-center font-semibold  text-black bg-white  py-2 px-4 flex items-center gap-2 rounded-md utline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer border-black/10 hover:text-gray-950"
         >
           Download CV{" "}
           <BiSolidDownload className="opacity-60 group-hover:translate-y-1 transition " />
