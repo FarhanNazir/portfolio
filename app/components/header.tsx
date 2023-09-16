@@ -5,10 +5,11 @@ import { headerList, links } from "../lib/data";
 import Link from "next/link";
 import { LiaGripfire } from "react-icons/lia";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
+
 import clsx from "clsx";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { BiLogoGithub } from "react-icons/bi";
+import ThemeSwitch from "./theme-switch";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -21,10 +22,17 @@ export default function Header() {
         animate={{ y: 0, opacity: 1 }}
       >
         <nav className="fixed  flex   w-full items-center   h-[3.5rem]  max-w-3xl px-4">
-          <div className="   flex  justify-start w-1/2  font-bold items-center ">
+          <Link
+            href="/"
+            className="   flex  justify-start w-1/2  font-bold items-center "
+            onClick={() => {
+              setActiveSection("Home");
+              setTimeOfLastClick(Date.now());
+            }}
+          >
             <LiaGripfire className="w-6 h-6" />
             Farhan Nazir
-          </div>
+          </Link>
           <ul className="hidden sm:flex  shrink-0  items-center justify-center gap-x-4 text-[0.8rem] font-medium text-gray-950   ">
             {headerList.map((list) => (
               <motion.li
@@ -65,9 +73,7 @@ export default function Header() {
             ))}
           </ul>
           <div className="flex  justify-end w-1/2 gap-x-2">
-            <button className=" rounded-md bg-yellow-400 w-10 h-10 flex items-center justify-center">
-              <MdOutlineLightMode />
-            </button>
+            <ThemeSwitch />
             <button className="sm:hidden rounded-md bg-white w-10 h-10 flex items-center justify-center">
               <RxHamburgerMenu />
             </button>

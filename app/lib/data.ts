@@ -43,10 +43,6 @@ export const headerList = [
     link: "/projects",
   },
   {
-    name: "Contact",
-    link: "/",
-  },
-  {
     name: "Source",
     link: "https://github.com/FarhanNazir",
   },

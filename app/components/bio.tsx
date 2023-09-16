@@ -8,7 +8,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "../lib/data";
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Bio() {
   return (
@@ -17,7 +17,6 @@ export default function Bio() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about"
     >
       <SectionHeading>Academic and Career Background</SectionHeading>
       <VerticalTimeline lineColor="">
