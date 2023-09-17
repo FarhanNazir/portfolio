@@ -9,7 +9,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "../lib/data";
 import { motion } from "framer-motion";
-import { useTheme } from "../context/theme-context";
+import { useTheme } from "next-themes";
 
 export default function Bio() {
   const { theme } = useTheme();
