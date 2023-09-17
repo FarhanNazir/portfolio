@@ -1,11 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { headerList, links } from "../lib/data";
+import { headerList } from "../lib/data";
 import Link from "next/link";
 import { LiaGripfire } from "react-icons/lia";
 import { RxHamburgerMenu } from "react-icons/rx";
-
 import clsx from "clsx";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { BiLogoGithub } from "react-icons/bi";
@@ -76,8 +75,8 @@ export default function Header() {
           </ul>
           <div className="flex  justify-end w-1/2 gap-x-2">
             <ThemeSwitch />
-            <button className="sm:hidden rounded-md bg-white w-10 h-10 flex items-center justify-center">
-              <RxHamburgerMenu />
+            <button className="sm:hidden rounded-md bg-white w-10 h-10 flex items-center justify-center dark:bg-gray-500">
+              <RxHamburgerMenu className="dark:text-gray-900" />
             </button>
           </div>
         </nav>
