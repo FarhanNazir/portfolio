@@ -9,6 +9,7 @@ import clsx from "clsx";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { BiLogoGithub } from "react-icons/bi";
 import ThemeSwitch from "./theme-switch";
+import DropDown from "./dropdown";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -75,9 +76,8 @@ export default function Header() {
           </ul>
           <div className="flex  justify-end w-1/2 gap-x-2">
             <ThemeSwitch />
-            <button className="sm:hidden rounded-md bg-white w-10 h-10 flex items-center justify-center dark:bg-gray-500">
-              <RxHamburgerMenu className="dark:text-gray-900" />
-            </button>
+
+            <DropDown />
           </div>
         </nav>
       </motion.div>
