@@ -15,29 +15,26 @@ export default function About() {
       <SectionHeading>Profile</SectionHeading>
 
       <p className="mb-3 max-w-3xl ">
-        I am an enthusiastic individual with a solid academic foundation,
-        holding a Bachelor's degree in Mathematical Science and a Master of
-        Science (Computational and Theoretical Sciences). My educational journey
-        has equipped me with a profound understanding of intricate mathematical
-        concepts and their practical applications in the field of computational
-        and theoretical sciences. Moreover, I have honed my skills in web
-        development and am proficient in React (Next.js), allowing me to create
-        seamless and interactive user experiences.
+        I'm a passionate individual with a strong background in Mathematical
+        Science (Bachelor's degree) and Computational and Theoretical Sciences
+        (Master's degree). Skilled in React (Next.js) and web development, I
+        excel at creating interactive user experiences. My expertise lies in
+        mathematical modeling, data analysis, and algorithm development. I'm
+        driven by curiosity and creativity, aiming to innovate in the
+        computational sciences and software development by integrating math and
+        technology.
       </p>
 
       <p className="max-w-3xl">
-        My passion lies in exploring the intersections of mathematics,
-        technology, and programming. I find joy in solving complex problems by
-        leveraging my expertise in mathematical modeling, data analysis, and
-        algorithm development. With a keen eye for detail and a knack for
-        creativity, I thrive on translating abstract ideas into tangible,
-        user-friendly applications. I am driven by a relentless curiosity, and I
-        am constantly seeking opportunities to integrate my mathematical
-        expertise with development technologies like React (Next.js). My goal is
-        to contribute innovatively to the ever-evolving landscape of
-        computational sciences and software development, creating solutions that
-        are not only functional but also aesthetically engaging and
-        user-focused.
+        My ultimate objective is to make significant and innovative
+        contributions to the continually evolving realm of computational
+        sciences and software development. I am dedicated to crafting solutions
+        that excel not only in flawless functionality but also in visually
+        appealing and user-centric designs. Leveraging my distinctive
+        combination of mathematical proficiency and technical expertise, I am
+        resolute in my commitment to driving forward the field, nurturing
+        innovation, and leading advancements in computational sciences and
+        software development
       </p>
     </motion.section>
   );

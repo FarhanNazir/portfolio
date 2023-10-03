@@ -38,8 +38,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Farhan.</span> I'm, a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">3 years</span> of experience. I have a
+        <span className="font-bold">full-stack developer</span>. I have a
         passion for creating
         <span className="italic"> websites and applications</span>, with a
         strong emphasis on {""}
@@ -62,7 +61,7 @@ export default function Intro() {
           <BiSolidRightArrow className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href="/CV.pdf"
+          href="/Farhan Nazir CV.pdf"
           download={true}
           className="w-44 group justify-center font-semibold  text-black bg-white  py-2 px-4 flex items-center gap-2 rounded-md utline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer border-black/10 hover:text-gray-950"
         >
