@@ -28,7 +28,7 @@ const DropDown = () => {
       <motion.div animate={open ? "open" : "closed"} className="relative">
         <button
           onClick={() => setOpen((pv) => !pv)}
-          className="flex items-center w-10 h-10 justify-center rounded-md text-indigo-50 bg-indigo-500 hover:bg-indigo-500 transition-colors"
+          className="flex items-center w-10 h-10 justify-center rounded-md text-indigo-50 bg-indigo-700 hover:bg-indigo-700 transition-colors"
         >
           <motion.span variants={iconVariants}>
             <FiChevronDown />

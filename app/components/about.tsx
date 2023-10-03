@@ -14,23 +14,30 @@ export default function About() {
     >
       <SectionHeading>Profile</SectionHeading>
 
-      <p className="mb-3 max-w-3xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec
-        ornare sapien. Donec et turpis sollicitudin, venenatis massa non,
-        aliquet quam. Pellentesque pulvinar mauris ac enim mattis, ut faucibus
-        erat posuere. Pellentesque quis dolor vel velit condimentum imperdiet in
-        ac neque. Nulla egestas vulputate luctus. Vestibulum ornare odio lectus,
-        in lobortis mi pulvinar eget. Integer sit amet molestie est, laoreet
-        vehicula massa. Curabitur a quam in lacus semper luctus non ac dui. Nam
-        pellentesque purus nec odio euismod mattis.
+      <p className="mb-3 max-w-3xl ">
+        I am an enthusiastic individual with a solid academic foundation,
+        holding a Bachelor's degree in Mathematical Science and a Master of
+        Science (Computational and Theoretical Sciences). My educational journey
+        has equipped me with a profound understanding of intricate mathematical
+        concepts and their practical applications in the field of computational
+        and theoretical sciences. Moreover, I have honed my skills in web
+        development and am proficient in React (Next.js), allowing me to create
+        seamless and interactive user experiences.
       </p>
 
       <p className="max-w-3xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet
-        congue justo eget aliquet. Sed in ex nec elit mollis semper. Sed
-        ultrices dui ac odio vulputate tincidunt. Duis accumsan, nibh id
-        hendrerit interdum, mauris nibh congue orci, quis cursus tortor magna
-        sit amet massa. Quisque in tellus ultrices, sollicitudin.
+        My passion lies in exploring the intersections of mathematics,
+        technology, and programming. I find joy in solving complex problems by
+        leveraging my expertise in mathematical modeling, data analysis, and
+        algorithm development. With a keen eye for detail and a knack for
+        creativity, I thrive on translating abstract ideas into tangible,
+        user-friendly applications. I am driven by a relentless curiosity, and I
+        am constantly seeking opportunities to integrate my mathematical
+        expertise with development technologies like React (Next.js). My goal is
+        to contribute innovatively to the ever-evolving landscape of
+        computational sciences and software development, creating solutions that
+        are not only functional but also aesthetically engaging and
+        user-focused.
       </p>
     </motion.section>
   );
