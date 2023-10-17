@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-yellow-200 dark:bg-slate-900 text-black dark:text-white`}
+        className={`${inter.className}  bg-yellow-200 dark:bg-slate-900 text-black dark:text-white scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-400 scrollbar-thumb-rounded-sm`}
       >
         <Providers>
           <ActiveSectionContextProvider>
