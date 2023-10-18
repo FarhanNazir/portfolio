@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
-import { useSectionView } from "../lib/hooks";
 
 export default function About() {
   return (

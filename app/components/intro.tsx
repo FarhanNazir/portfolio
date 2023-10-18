@@ -2,17 +2,11 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
+
 import Link from "next/link";
 import { BiSolidRightArrow, BiSolidDownload } from "react-icons/bi";
-import { useActiveSectionContext } from "../context/active-section-context";
-import { useSectionView } from "../lib/hooks";
 
 export default function Intro() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
-
   return (
     <section className=" max-w-xl text-center  scroll-mt-[100rem]">
       <div className="flex items-center justify-center">

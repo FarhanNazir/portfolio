@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "./components/header";
-import ActiveSectionContextProvider from "./context/active-section-context";
+
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/footer";
 
@@ -24,15 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${inter.className}  bg-yellow-200 dark:bg-slate-900 text-black dark:text-white scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-400 scrollbar-thumb-rounded-sm`}
+        className={`${inter.className}  bg-yellow-200 dark:bg-slate-900 text-black dark:text-white scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-400 scrollbar-thumb-rounded-sm min-h-screen`}
       >
         <Providers>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-            <Toaster position="top-right" />
-          </ActiveSectionContextProvider>
+          <Header />
+          {children}
+          <Footer />
+          <Toaster position="top-right" />
         </Providers>
       </body>
     </html>

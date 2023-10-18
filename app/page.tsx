@@ -1,5 +1,5 @@
 import About from "./components/about";
-import Bio from "./components/bio";
+import Bio from "./components/education";
 import Contact from "./components/contact";
 import Intro from "./components/intro";
 import SectionDivider from "./components/section-divider";

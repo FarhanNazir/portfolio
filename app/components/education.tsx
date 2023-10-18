@@ -20,7 +20,7 @@ export default function Bio() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
-      <SectionHeading>Academic and Career Background</SectionHeading>
+      <SectionHeading>Academic Background</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>

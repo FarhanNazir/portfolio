@@ -4,16 +4,18 @@ import { motion } from "framer-motion";
 import { headerList } from "../lib/data";
 import Link from "next/link";
 import { LiaGripfire } from "react-icons/lia";
-import { RxHamburgerMenu } from "react-icons/rx";
 import clsx from "clsx";
-import { useActiveSectionContext } from "../context/active-section-context";
+
 import { BiLogoGithub } from "react-icons/bi";
 import ThemeSwitch from "./theme-switch";
 import DropDown from "./dropdown";
+import { usePathname } from "next/navigation";
+import { checkpath } from "../lib/checkpath";
 
 export default function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+  const path = usePathname();
+
+  const currentPath = checkpath(path);
   return (
     <header className="z-[999] relative flex ">
       <motion.div
@@ -25,10 +27,6 @@ export default function Header() {
           <Link
             href="/"
             className="   flex  justify-start w-1/2  font-bold items-center "
-            onClick={() => {
-              setActiveSection("Home");
-              setTimeOfLastClick(Date.now());
-            }}
           >
             <LiaGripfire className="w-6 h-6" />
             Farhan Nazir
@@ -45,21 +43,17 @@ export default function Header() {
                   className={clsx(
                     "flex items-center justify-center p-2  hover:text-yellow-900 transition",
                     {
-                      "text-yellow-900 ": activeSection === list.name,
+                      "text-yellow-900 ": currentPath === list.name,
                     }
                   )}
                   href={list.link}
-                  onClick={() => {
-                    setActiveSection(list.name);
-                    setTimeOfLastClick(Date.now());
-                  }}
                 >
                   {list.name === "Source" && (
                     <BiLogoGithub className="w-6 h-6" />
                   )}
                   {list.name}
 
-                  {list.name === activeSection && (
+                  {list.name === currentPath && (
                     <motion.span
                       className="bg-yellow-500 rounded-xl absolute inset-0 -z-10    "
                       layoutId="activeSection"
