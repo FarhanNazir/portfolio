@@ -54,15 +54,7 @@ export default function Header() {
                   {list.name}
 
                   {list.name === currentPath && (
-                    <motion.span
-                      className="bg-yellow-500 rounded-xl absolute inset-0 -z-10    "
-                      layoutId="activeSection"
-                      transition={{
-                        type: "spring",
-                        stiffness: 380,
-                        damping: 30,
-                      }}
-                    ></motion.span>
+                    <span className="bg-yellow-500 rounded-xl absolute inset-0 -z-10    "></span>
                   )}
                 </Link>
               </motion.li>

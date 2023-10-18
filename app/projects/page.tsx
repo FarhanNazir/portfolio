@@ -12,6 +12,8 @@ export default function Page() {
     <main className="flex flex-col items-center justify-between w-full align-middle sm:px-24 px-10  pt-24  dark:text-white">
       <Layout>
         <SectionHeading>Personal Projects</SectionHeading>
+      </Layout>
+      <Layout delay={0.2}>
         <div className="grid md:grid-cols-2 grid-cols-1  gap-6 ">
           <Link
             href="/projects/lyriverse"
