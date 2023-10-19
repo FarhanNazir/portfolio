@@ -24,7 +24,7 @@ export default function Page() {
               src="/lyriverse.png"
               width={230}
               height={128}
-              alt="Picture of the author"
+              alt="thumbnail"
             />
             <div className="m-2 font-bold">Lyriverse</div>
             <p className="text-center text-sm mb-6">
@@ -32,15 +32,15 @@ export default function Page() {
               operates seamlessly.
             </p>
           </Link>
-          <a href="/">
+          <Link href="/projects/lyrictune">
             <Image
               className="rounded-xl"
-              src="/lyriverse.png"
+              src="/LyricTuneYt.png"
               width={230}
               height={128}
-              alt="Picture of the author"
+              alt="thumbnail"
             />
-          </a>
+          </Link>
           <a href="/">
             <Image
               className="rounded-xl"

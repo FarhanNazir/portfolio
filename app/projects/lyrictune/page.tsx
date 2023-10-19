@@ -13,7 +13,7 @@ export default function Page() {
         <Layout delay={0.1}>
           <h2>
             <Link
-              className=" dark:text-yellow-300 text-blue-500 text-sm hover:underline"
+              className=" dark:text-yellow-300 text-blue-700 text-sm hover:underline"
               href="/projects"
             >
               Project
@@ -34,10 +34,10 @@ export default function Page() {
                 WEBSITE
               </span>{" "}
               <Link
-                className="underline dark:text-yellow-300 text-blue-500"
-                href="https://lyriverse.vercel.app"
+                className="underline dark:text-yellow-300 text-blue-700"
+                href="https://lyriverse.vercel.app/"
               >
-                https://lyriverse.vercel.app
+                https://lyriverse.vercel.app/
               </Link>
             </li>
             <li className="text-sm  ">
@@ -45,17 +45,6 @@ export default function Page() {
                 STACK
               </span>{" "}
               Next.js (App Router), TypeScript, Tailwind
-            </li>
-            <li className="text-sm  ">
-              <span className="p-1 text-xs dark:bg-yellow-700 bg-blue-700 dark:text-yellow-300 text-blue-300 rounded-md font-semibold">
-                SOURCE
-              </span>{" "}
-              <Link
-                className="underline dark:text-yellow-300 text-blue-500"
-                href="https://github.com/FarhanNazir/LyriVerse"
-              >
-                https://github.com/FarhanNazir/LyriVerse
-              </Link>
             </li>
           </ul>
         </Layout>
