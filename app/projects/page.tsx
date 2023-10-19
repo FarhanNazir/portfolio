@@ -32,33 +32,23 @@ export default function Page() {
               operates seamlessly.
             </p>
           </Link>
-          <Link href="/projects/lyrictune">
+          <Link
+            href="/projects/lyrictune"
+            className="flex flex-col items-center w-[230px]"
+          >
             <Image
               className="rounded-xl"
-              src="/LyricTuneYt.png"
+              src="/LyricTuneYT.png"
               width={230}
               height={128}
               alt="thumbnail"
             />
+            <div className="m-2 font-bold">LyricTuneYT</div>
+            <p className="text-center text-sm mb-6">
+              Browser extension that display the lyrics for the current YouTube
+              videos you're watching
+            </p>
           </Link>
-          <a href="/">
-            <Image
-              className="rounded-xl"
-              src="/lyriverse.png"
-              width={230}
-              height={128}
-              alt="Picture of the author"
-            />
-          </a>
-          <a href="/">
-            <Image
-              className="rounded-xl"
-              src="/lyriverse.png"
-              width={230}
-              height={128}
-              alt="Picture of the author"
-            />
-          </a>
         </div>
       </Layout>
     </main>

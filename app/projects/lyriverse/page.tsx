@@ -23,10 +23,12 @@ export default function Page() {
           </h2>
         </Layout>
         <Layout delay={0.2}>
-          <p className="text-justify ">
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support. The life-time revenue is more than
-            $300k.
+          <p className="text-justify  indent-8">
+            Lyriverse is a user-friendly RESTful API designed to provide song
+            lyrics based on the song's title and the artist's name. It offers a
+            straightforward and powerful solution for accessing lyrics
+            effortlessly. To maintain and prevent abuse, there is a limit of 100
+            requests per hour for each user.
           </p>
           <ul className="px-4 space-y-2 my-5">
             <li className="text-sm ">

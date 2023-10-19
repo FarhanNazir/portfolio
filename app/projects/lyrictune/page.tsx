@@ -19,32 +19,43 @@ export default function Page() {
               Project
             </Link>
             <span className="text-sm"> {" > "} </span>
-            <span className="font-bold">LyriVerse</span>
+            <span className="font-bold">LyricTuneYT</span>
           </h2>
         </Layout>
         <Layout delay={0.2}>
-          <p className="text-justify ">
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support. The life-time revenue is more than
-            $300k.
+          <p className="text-justify indent-8 ">
+            LyricTuneYT is a browser extension that enhances your YouTube
+            experience by displaying lyrics for the current videos you're
+            watching
           </p>
           <ul className="px-4 space-y-2 my-5">
             <li className="text-sm ">
               <span className="p-1 text-xs dark:bg-yellow-700 bg-blue-700 dark:text-yellow-300 text-blue-300 rounded-md font-semibold">
-                WEBSITE
+                WEBSTORE
               </span>{" "}
               <Link
                 className="underline dark:text-yellow-300 text-blue-700"
-                href="https://lyriverse.vercel.app/"
+                href="https://chrome.google.com/webstore/detail/lyrictuneyt/jmlpnbkfamkcifomdcljnikegkmlciha"
               >
-                https://lyriverse.vercel.app/
+                LyricTuneYT
               </Link>
             </li>
             <li className="text-sm  ">
               <span className="p-1 text-xs dark:bg-yellow-700 bg-blue-700 dark:text-yellow-300 text-blue-300 rounded-md font-semibold">
                 STACK
               </span>{" "}
-              Next.js (App Router), TypeScript, Tailwind
+              Manifest V3, JavaScript
+            </li>
+            <li className="text-sm  ">
+              <span className="p-1 text-xs dark:bg-yellow-700 bg-blue-700 dark:text-yellow-300 text-blue-300 rounded-md font-semibold">
+                SOURCE
+              </span>{" "}
+              <Link
+                className="underline dark:text-yellow-300 text-blue-500"
+                href="https://github.com/FarhanNazir/LyricTuneYT"
+              >
+                https://github.com/FarhanNazir/LyricTuneYT
+              </Link>
             </li>
           </ul>
         </Layout>
