@@ -16,7 +16,7 @@ export default function Intro() {
           transition={{ type: "tween", duration: 0.2 }}
         >
           <Image
-            src="https://static.wikia.nocookie.net/kong/images/6/60/2-D_Phase_2_.jpg/revision/latest?cb=20221119163101"
+            src="/avatar.png"
             alt="2d"
             width="192"
             height="192"

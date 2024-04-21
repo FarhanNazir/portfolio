@@ -26,7 +26,7 @@ export default function Page() {
               height={128}
               alt="thumbnail"
             />
-            <div className="m-2 font-bold">Lyriverse</div>
+            <div className="m-2 font-bold underline">Lyriverse</div>
             <p className="text-center text-sm mb-6">
               A straightforward and user-friendly RESTful lyrics API that
               operates seamlessly.
@@ -43,7 +43,7 @@ export default function Page() {
               height={128}
               alt="thumbnail"
             />
-            <div className="m-2 font-bold">LyricTuneYT</div>
+            <div className="m-2 font-bold underline">LyricTuneYT</div>
             <p className="text-center text-sm mb-6">
               Browser extension that display the lyrics for the current YouTube
               videos you're watching
